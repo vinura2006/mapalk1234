@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Educational Games - EduKids</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/games.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+  <body>
+    <div id="app">
+      <header class="main-header">
+        <div class="container">
+          <div class="logo">
+            <h1>EduKids</h1>
+          </div>
+          <nav class="main-nav">
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#" id="lessons-link">Lessons</a></li>
+              <li><a href="games.html" class="active">Educational Games</a></li>
+              <li><a href="lms.html">Learning System</a></li>
+              <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <!-- Games Header -->
+        <section class="games-header">
+          <div class="container">
+            <h2>Educational Language Games</h2>
+            <p>Fun interactive games to improve your language skills in Tamil and English</p>
+            <div class="language-selector">
+              <button class="language-btn active" data-language="all">All Games</button>
+              <button class="language-btn" data-language="tamil">Tamil Games</button>
+              <button class="language-btn" data-language="english">English Games</button>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Games Grid -->
+        <section class="games-grid-section">
+          <div class="container">
+            <div class="games-grid" id="games-grid">
+              <!-- Games will be inserted here by JS -->
+            </div>
+          </div>
+        </section>
+        
+        <!-- Featured Game -->
+        <section class="featured-game-section">
+          <div class="container">
+            <h2 class="section-title">Featured Game</h2>
+            <div class="featured-game">
+              <div class="featured-game-image">
+                <img src="https://images.pexels.com/photos/5428003/pexels-photo-5428003.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Word Challenge">
+                <div class="game-badge">Popular</div>
+              </div>
+              <div class="featured-game-content">
+                <h3>Word Challenge</h3>
+                <p>Test your vocabulary skills with our most popular word challenge game. Suitable for all ages and skill levels.</p>
+                <div class="game-details">
+                  <div class="game-detail">
+                    <i class="fas fa-globe"></i>
+                    <span>Both Languages</span>
+                  </div>
+                  <div class="game-detail">
+                    <i class="fas fa-users"></i>
+                    <span>Ages 8+</span>
+                  </div>
+                  <div class="game-detail">
+                    <i class="fas fa-star"></i>
+                    <span>4.8/5 Rating</span>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-primary play-btn" data-game="word-challenge">Play Now</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- How to Play -->
+        <section class="how-to-play-section">
+          <div class="container">
+            <h2 class="section-title">How to Play</h2>
+            <div class="steps-container">
+              <div class="step">
+                <div class="step-icon">
+                  <i class="fas fa-user-plus"></i>
+                </div>
+                <h3>Create Account</h3>
+                <p>Sign up or log in to track your progress and scores</p>
+              </div>
+              <div class="step">
+                <div class="step-icon">
+                  <i class="fas fa-gamepad"></i>
+                </div>
+                <h3>Choose a Game</h3>
+                <p>Select from a variety of language learning games</p>
+              </div>
+              <div class="step">
+                <div class="step-icon">
+                  <i class="fas fa-trophy"></i>
+                </div>
+                <h3>Earn Points</h3>
+                <p>Complete challenges to earn points and badges</p>
+              </div>
+              <div class="step">
+                <div class="step-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Track Progress</h3>
+                <p>View your learning progress in your profile</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="main-footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-logo">
+              <h2>EduKids</h2>
+              <p>Nurturing Young Minds Through Language</p>
+            </div>
+            <div class="footer-links">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" id="footer-lessons-link">Lessons</a></li>
+                <li><a href="games.html">Educational Games</a></li>
+                <li><a href="lms.html">Learning System</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="footer-newsletter">
+              <h3>Subscribe to Our Newsletter</h3>
+              <form id="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2025 EduKids. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Language Selection Modal -->
+    <div class="modal" id="language-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Choose Your Language Stream</h2>
+        <div class="language-options">
+          <div class="language-option" data-language="tamil">
+            <img src="https://images.pexels.com/photos/3760844/pexels-photo-3760844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Tamil Language">
+            <h3>Tamil Stream</h3>
+            <p>Learn Tamil language from basics to advanced levels</p>
+          </div>
+          <div class="language-option" data-language="english">
+            <img src="https://images.pexels.com/photos/267669/pexels-photo-267669.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="English Language">
+            <h3>English Stream</h3>
+            <p>Master English language skills for all levels</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Game Modal -->
+    <div class="modal" id="game-modal">
+      <div class="modal-content game-modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="game-container" id="game-container">
+          <!-- Game content will be loaded here -->
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./js/games.js"></script>
+  </body>
+</html>

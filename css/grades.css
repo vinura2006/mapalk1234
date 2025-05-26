@@ -1,0 +1,192 @@
+/* Stream Header */
+.stream-header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.stream-header.tamil {
+  background-image: linear-gradient(135deg, #FF9F43, #FF8412);
+}
+
+.stream-header.english {
+  background-image: linear-gradient(135deg, #4A6FA5, #2A4F85);
+}
+
+.stream-header h2 {
+  font-size: 2.2rem;
+  margin-bottom: var(--spacing-sm);
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.stream-header p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: var(--font-size-lg);
+  position: relative;
+  z-index: 1;
+}
+
+.stream-header::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  top: -150px;
+  right: -150px;
+}
+
+.stream-header::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  bottom: -100px;
+  left: -100px;
+}
+
+/* Grades Section */
+.grades-section {
+  padding: var(--spacing-xl) 0;
+}
+
+.grades-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+  padding: var(--spacing-md) 0;
+}
+
+.grade-card {
+  background-color: white;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.grade-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.grade-card a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.grade-image {
+  height: 150px;
+  overflow: hidden;
+}
+
+.grade-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.grade-card:hover .grade-image img {
+  transform: scale(1.05);
+}
+
+.grade-content {
+  padding: var(--spacing-lg);
+}
+
+.grade-content h3 {
+  color: var(--primary-dark);
+  margin-bottom: var(--spacing-sm);
+  font-size: var(--font-size-lg);
+  display: flex;
+  align-items: center;
+}
+
+.grade-content h3 i {
+  margin-right: var(--spacing-sm);
+  color: var(--secondary-color);
+}
+
+.grade-content p {
+  color: var(--text-light);
+  margin-bottom: var(--spacing-md);
+}
+
+.grade-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
+}
+
+.topic-tag {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 4px 8px;
+  border-radius: 100px;
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+}
+
+.tamil .topic-tag {
+  background-color: rgba(255, 159, 67, 0.1);
+  color: var(--secondary-dark);
+}
+
+.english .topic-tag {
+  background-color: rgba(74, 111, 165, 0.1);
+  color: var(--primary-dark);
+}
+
+.grade-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--spacing-sm);
+  border-top: 1px solid var(--border-color);
+}
+
+.lessons-count {
+  font-size: var(--font-size-sm);
+  color: var(--text-light);
+}
+
+.explore-btn {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.explore-btn i {
+  margin-left: var(--spacing-xs);
+  transition: transform var(--transition-fast);
+}
+
+.grade-card:hover .explore-btn i {
+  transform: translateX(4px);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .grades-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .grades-container {
+    grid-template-columns: 1fr;
+  }
+}

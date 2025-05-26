@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grade Selection - EduKids</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/grades.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+  <body>
+    <div id="app">
+      <header class="main-header">
+        <div class="container">
+          <div class="logo">
+            <h1>EduKids</h1>
+          </div>
+          <nav class="main-nav">
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#" id="lessons-link" class="active">Lessons</a></li>
+              <li><a href="games.html">Educational Games</a></li>
+              <li><a href="lms.html">Learning System</a></li>
+              <li><a href="index.html#contact" class="contact-link">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="stream-header" id="stream-header">
+          <!-- Stream info will be inserted here by JS -->
+        </section>
+        
+        <section class="grades-section">
+          <div class="container">
+            <h2 class="section-title">Select a Grade</h2>
+            <div class="grades-container" id="grades-container">
+              <!-- Grade cards will be inserted here by JS -->
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="main-footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-logo">
+              <h2>EduKids</h2>
+              <p>Nurturing Young Minds Through Language</p>
+            </div>
+            <div class="footer-links">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" id="footer-lessons-link">Lessons</a></li>
+                <li><a href="games.html">Educational Games</a></li>
+                <li><a href="lms.html">Learning System</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="footer-newsletter">
+              <h3>Subscribe to Our Newsletter</h3>
+              <form id="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2025 EduKids. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Language Selection Modal -->
+    <div class="modal" id="language-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Choose Your Language Stream</h2>
+        <div class="language-options">
+          <div class="language-option" data-language="tamil">
+            <img src="https://images.pexels.com/photos/3760844/pexels-photo-3760844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Tamil Language">
+            <h3>Tamil Stream</h3>
+            <p>Learn Tamil language from basics to advanced levels</p>
+          </div>
+          <div class="language-option" data-language="english">
+            <img src="https://images.pexels.com/photos/267669/pexels-photo-267669.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="English Language">
+            <h3>English Stream</h3>
+            <p>Master English language skills for all levels</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./js/grades.js"></script>
+  </body>
+</html>

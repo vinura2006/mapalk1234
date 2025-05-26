@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Materials - EduKids</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/course.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+  <body>
+    <div id="app">
+      <header class="main-header">
+        <div class="container">
+          <div class="logo">
+            <h1>EduKids</h1>
+          </div>
+          <nav class="main-nav">
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#" id="lessons-link" class="active">Lessons</a></li>
+              <li><a href="games.html">Educational Games</a></li>
+              <li><a href="lms.html">Learning System</a></li>
+              <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <!-- Course Header -->
+        <section class="course-header" id="course-header">
+          <!-- Course header will be inserted here by JS -->
+        </section>
+        
+        <section class="course-content">
+          <div class="container">
+            <div class="course-grid">
+              <!-- Sidebar navigation -->
+              <aside class="course-sidebar">
+                <div class="course-progress" id="course-progress">
+                  <!-- Progress will be inserted here by JS -->
+                </div>
+                
+                <nav class="course-nav">
+                  <h3>Course Content</h3>
+                  <ul class="lesson-list" id="lesson-list">
+                    <!-- Lesson list will be inserted here by JS -->
+                  </ul>
+                </nav>
+                
+                <div class="course-actions">
+                  <button class="btn btn-secondary" id="track-progress-btn">
+                    <i class="fas fa-bookmark"></i> Track Progress
+                  </button>
+                  <a href="lms.html" class="btn btn-primary">
+                    <i class="fas fa-graduation-cap"></i> Go to LMS
+                  </a>
+                </div>
+              </aside>
+              
+              <!-- Main content area -->
+              <div class="lesson-container">
+                <div class="lesson-content" id="lesson-content">
+                  <!-- Lesson content will be inserted here by JS -->
+                  <div class="welcome-message">
+                    <h2>Welcome to the course!</h2>
+                    <p>Select a lesson from the sidebar to begin learning.</p>
+                    <div class="welcome-image">
+                      <img src="https://images.pexels.com/photos/4145354/pexels-photo-4145354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Welcome to the course">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="lesson-navigation">
+                  <button class="nav-btn prev-lesson" id="prev-lesson" disabled>
+                    <i class="fas fa-chevron-left"></i> Previous Lesson
+                  </button>
+                  <button class="nav-btn next-lesson" id="next-lesson" disabled>
+                    Next Lesson <i class="fas fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Related Materials Section -->
+        <section class="related-materials-section">
+          <div class="container">
+            <h2 class="section-title">Related Materials</h2>
+            <div class="materials-grid" id="related-materials">
+              <!-- Related materials will be inserted here by JS -->
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="main-footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-logo">
+              <h2>EduKids</h2>
+              <p>Nurturing Young Minds Through Language</p>
+            </div>
+            <div class="footer-links">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" id="footer-lessons-link">Lessons</a></li>
+                <li><a href="games.html">Educational Games</a></li>
+                <li><a href="lms.html">Learning System</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="footer-newsletter">
+              <h3>Subscribe to Our Newsletter</h3>
+              <form id="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2025 EduKids. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Language Selection Modal -->
+    <div class="modal" id="language-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>Choose Your Language Stream</h2>
+        <div class="language-options">
+          <div class="language-option" data-language="tamil">
+            <img src="https://images.pexels.com/photos/3760844/pexels-photo-3760844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Tamil Language">
+            <h3>Tamil Stream</h3>
+            <p>Learn Tamil language from basics to advanced levels</p>
+          </div>
+          <div class="language-option" data-language="english">
+            <img src="https://images.pexels.com/photos/267669/pexels-photo-267669.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="English Language">
+            <h3>English Stream</h3>
+            <p>Master English language skills for all levels</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./js/course.js"></script>
+  </body>
+</html>
